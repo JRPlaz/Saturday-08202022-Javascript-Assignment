@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background:url(background.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      </style>
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span style="color: #39FF14;"
+            class="fw-bolder">PLAZ<span class="text-white">
+              &lt;/&gt;
+            </span>
+          </span><span style="color: #FF0000;" class="fw-bold">ACADEMY</span></a>
+    </nav>
+
+      <!-- Registration Form -->
+      <div class="container1">
+        <form id="regForm" action="">
+          <!-- One "tab" for each step in the form: -->
+          <div class="tab">
+            <h3 class="title">Personal
+              Information</h3>
+            <div class="input-container">
+              <input type="text" class="input" id="lastName">
+              <label for="">Last Name</label>
+              <span class="span1">Last Name</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="firstName">
+              <label for="">First Name</label>
+              <span class="span1">First Name</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="middleName">
+              <label for="">Middle Name</label>
+              <span class="span1">First Name</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="suffix" style="
+                width: 16%;">
+              <label for="">Suffix</label>
+              <span class="span1">Suffix </span>
+            </div>
+            <div class="input-container">
+              <input type="number" class="input" id="age" style="
+                width: 12%;">
+              <label for="">Age</label>
+              <span class="span1">Age</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="birthdate"
+                onfocus="(this.type='date')" onblur="if(!this.value)
+                this.type='text'" value=" " style="
+                width: 20%;">
+              <label for="">Birth Date</label>
+              <span class="span1">Birth Date</span>
+            </div>
+            <div class="input-container">
+              <select sex="sex" id="sex" class="input
+                select_category" style="appearance: none;">
+                <option value="" disabled selected hidden
+                  class="input"></option>
+                <option value="male" style="color: #156626;">Male</option>
+                <option value="female" style="color: #156626;">Female</option>
+              </select>
+              <label for="">Sex</label>
+              <span class="span1">Sex </span>
+            </div>
+            <div class="input-container">
+              <input type="number" class="input" id="contact" style="
+                width: 25%;">
+              <label for="">Contact Number</label>
+              <span class="span1">Contact Number</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="homeaddress" style="
+                width: 98%;">
+              <label for="">Home Address</label>
+              <span class="span1">Home Address </span>
+            </div>
+            <div class="input-container">
+              <input type="email" class="input" id="email" style="
+                width: 35%;">
+              <label for="">Email Address</label>
+              <span class="span1">Email Address</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="citizenship" style="
+                width: 15%;">
+              <label for="">Citizenship</label>
+              <span class="span1">Citizenship</span>
+            </div>
+            <div class="input-container">
+              <select civilstatus="civilstatus" id="civilstatus"
+                class="input select_category" style=" width:
+                15%; appearance: none;"
+                required/>
+                <option value="" disabled selected hidden
+                  class="input"></option>
+                <option value="male" style="color: #156626;">Single</option>
+                <option value="female" style="color: #156626;">Married</option>
+                <option value="female" style="color: #156626;">Divorced</option>
+                <option value="female" style="color: #156626;">Widowed</option>
+              </select>
+              <label for="">Civil Status</label>
+              <span class="span1">Civil Status</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="religion" style="
+                width: 29%;">
+              <label for="">Religion</label>
+              <span class="span1">Religion</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="shortIntro" style="
+                width: 98%;">
+              <label for="">Brief Self Introduction</label>
+              <span class="span1">Religion</span>
+            </div>
+          </div>
+          <div class="tab">
+            <h3 class="title">Previous
+              School Information</h3>
+            <div class="input-container">
+              <input type="text" class="input" id="prevschoolname"
+                style="width:
+                98%;">
+              <label for="">Previous School Name (Senior High)</label>
+              <span class="span1">Previous School Name(Senior
+                High)</span>
+            </div>
+            <div class="input-container">
+              <select strand="strand" id="strand"
+                class="input select_category" style="width:
+                48.5%; appearance: none;" required/>
+                <option value="" disabled selected hidden
+                  class="input"></option>
+                <option value="male" style="color: #156626;">ABM
+                  (Accounting, Business, and Management)</option>
+                <option value="female" style="color: #156626;">GAS
+                  (General Academic Strand)</option>
+                <option value="female" style="color: #156626;">HUMSS
+                  (Humanities and Social Sciences)</option>
+                <option value="female" style="color: #156626;">STEM
+                  (Science, Technology, Engineering, and
+                  Mathematics)</option>
+                <option value="female" style="color: #156626;">TVL
+                  (Technical-Vocational Livelihood)</option>
+              </select>
+              <label for="" class="label2">STRAND</label>
+              <span class="span1">STRAND</span>
+            </div>
+            <div class="input-container">
+              <select applicanttype="applicanttype"
+                id="applicanttype"
+                class="input select_category" style="width:
+                48.5%; appearance: none;"
+                required/>
+                <option value="" disabled selected hidden
+                  class="input"></option>
+                <option value="male" style="color: #156626;">Freshman</option>
+                <option value="female" style="color: #156626;">Transferee</option>
+                <option value="female" style="color: #156626;">Masteral</option>
+              </select>
+              <label for="" class="label2">Applicant Type</label>
+              <span class="span1">Applicant Type</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="mathgwa" style="width:
+                23.5%;">
+              <label for="">GWA - Mathematics</label>
+              <span class="span1">GWA - Mathematics</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="sciencegwa" style="width:
+                23.5%;">
+              <label for="">GWA - Mathematics</label>
+              <span class="span1">GWA - Science</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="filipinogwa" style="width:
+                23.5%;">
+              <label for="">GWA - Mathematics</label>
+              <span class="span1">GWA - Filipino</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="englishgwa" style="width:
+                23.5%;">
+              <label for="">GWA - Mathematics</label>
+              <span class="span1">GWA - English</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="overallgwa" style="width:
+                48.5%;">
+              <label for="">Overall GWA</label>
+              <span class="span1">Overall GWA</span>
+            </div>
+            <div class="input-container">
+              <input type="text" class="input" id="lowestgwa" style="width:
+                48.5%;">
+              <label for="">Lowest GWA</label>
+              <span class="span1">Lowest GWA</span>
+            </div>
+            <div class="input-container">
+              <select strand="strand" id="strand"
+                class="input select_category" style="width:
+                98%; appearance: none;"
+                required/>
+                <option value="" disabled selected hidden
+                  class="input"></option>
+                <optgroup label="Information & Communications
+                  Technology" style="color: #156626;">
+                  <option value="male" style="color:
+                    #156626;">BS
+                    in Information Technology (BSIT)</option>
+                  <option value="female" style="color:
+                    #156626;">BS
+                    in Computer Science (BSCS)</option>
+                  <option value="female" style="color:
+                    #156626;">BS
+                    in Information Systems (BSIS)</option>
+                  <option value="female" style="color:
+                    #156626;">2-yr.
+                    Information Technology (IT)</option>
+                  <option value="female" style="color:
+                    #156626;">2-yr.
+                    Associate in Computer Technology (ACT)</option>
+                </optgroup>
+                <optgroup label="Business & Management"
+                  style="color: #156626;">
+                  <option value="male" style="color:
+                    #156626;"> BS
+                    in Business Administration (BSBA)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    BS in Accountancy (BSA)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    BS in Accounting Information System
+                    (BSAIS)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    BS in Management Accounting (BSMA)</option>
+                  <option value="female" style="color:
+                    #156626;">BS
+                    in Retail Technology and Consumer
+                    Science
+                    (BSRTCS)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    2-yr. Associate in Retail Technology
+                    (ART)</option>
+                </optgroup>
+                <optgroup label="Hospitality Management"
+                  style="color: #156626;">
+                  <option value="male" style="color:
+                    #156626;"> BS
+                    in Hospitality Management (BSHM)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    BS in Culinary Management (BSCM)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    3-yr. Hotel and Restaurant
+                    Administration
+                    (HRA)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    2-yr. Hospitality and Restaurant
+                    Services
+                    (HRS)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    2-yr. Professional Culinary Arts</option>
+                </optgroup>
+                <optgroup label="Tourism Management"
+                  style="color: #156626;">
+                  <option value="male" style="color:
+                    #156626;">BS
+                    in Tourism Management (BSTM)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    2-yr. Tourism and Events Management
+                    (TEM)</option>
+                </optgroup>
+                <optgroup label="Engineering"
+                  style="color: #156626;">
+                  <option value="male" style="color:
+                    #156626;">
+                    BS in Computer Engineering (BSCpE)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    BS in Mechanical Engineering (BSCpE)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    BS in Electrical Engineering (BSCpE)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    BS in Industrial Engineering (BSCpE)</option>
+                </optgroup>
+                <optgroup label="Arts & Sciences"
+                  style="color: #156626;">
+                  <option value="male" style="color:
+                    #156626;">
+                    Bachelor of Multimedia Arts (BMMA)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    BS in Interior Design (BSID)</option>
+                  <option value="female" style="color:
+                    #156626;">
+                    BA in Communication (BACOMM)</option>
+                </optgroup>
+              </select>
+              <label for="" class="label2">COURSE</label>
+              <span class="span1">COURSE</span>
+            </div>
+          </div>
+          <div class="tab">
+            <h3 class="title">Upload Files</h3>
+            <div class="input-container">
+              <h4 style="color: #fff; margin-left: 25px;
+                margin-bottom: 5px;">Copy of Card/TOR</h4>
+              <input type="file" class="input" id="otherinfo"
+                style=" width: 98%; text-decoration: none;" required/>
+
+            </div>
+          </div>
+          <div style="overflow:auto;">
+            <div>
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+
+        </form>
+
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
